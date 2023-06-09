@@ -1,4 +1,14 @@
 {
+  "name": "forumjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon -e js,ejs,css"
+  },
   "dependencies": {
     "bcrypt": "^5.1.0",
     "dotenv": "^16.1.4",
@@ -11,5 +21,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
-  }
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
