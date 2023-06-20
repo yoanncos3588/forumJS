@@ -2,22 +2,119 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/** COLORS
+from-indigo-950 to-indigo-900
+border-indigo-700
+text-emerald-50
+text-emerald-400
+from-emerald-400 to-green-500
+
+
+/********************************************* STRUCTURE **/
+/********************************************* STRUCTURE **/
+
+body {
+    @apply bg-gradient-to-r from-indigo-950 to-indigo-900 text-emerald-50;
+}
+
+header {
+    @apply py-4 border-b-2 border-indigo-700;
+}
+
+.panel {
+    @apply bg-indigo-900 flex flex-col p-8 rounded shadow-xl border border-indigo-700;
+}
+
+/********************************************* TYPO **/
+/********************************************* TYPO **/
+
 a {
     @apply hover:text-emerald-400 hover:underline;
+}
+
+a.link-activ {
+    @apply opacity-50;
+}
+
+h1,
+h2,
+h3 {
+    @apply font-bold;
+}
+
+h1 {
+    @apply text-4xl;
+}
+
+h2 {
+    @apply text-3xl;
+}
+
+h3 {
+    @apply text-2xl;
+}
+
+h4 {
+    @apply text-lg uppercase;
+}
+
+h5 {
+    @apply text-sm uppercase tracking-widest;
+}
+
+h6 {
+    @apply text-xs uppercase;
 }
 
 label {
     @apply mb-2;
 }
 
-button, button[type="submit"] {
-    @apply font-bold bg-gradient-to-r from-emerald-400 to-green-500 rounded text-indigo-950 p-3 hover:bg-emerald-500 hover:text-emerald-50;
+/********************************************* BUTTON **/
+/********************************************* BUTTON **/
+
+.fjs-button {
+    @apply font-bold bg-gradient-to-r from-emerald-400 to-green-500 rounded text-indigo-950 p-3 hover:bg-emerald-500 hover:text-green-800 border border-green-400 hover:border-green-800;
 }
+
+.fjs-button--line {
+    @apply bg-gradient-to-r from-indigo-900 to-indigo-900 text-emerald-50 border-indigo-400 hover:border-indigo-300 hover:text-indigo-300;
+}
+
+/********************************************* FORM **/
+/********************************************* FORM **/
 
 .form-line {
     @apply text-sm flex flex-col;
 }
 
-input[type="text"],input[type="password"], input[type="number"] {
-    @apply px-2 py-2;
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    @apply bg-indigo-100 border text-indigo-950 border-indigo-900 px-2 py-2 placeholder:italic placeholder:text-indigo-400;
+}
+
+/********************************************* ALERT **/
+/********************************************* ALERT **/
+
+.alert {
+    @apply border-y py-2;
+}
+
+.alert a {
+    @apply font-bold underline hover:text-indigo-950;
+}
+
+.alert--error {
+    @apply bg-red-300 border-red-900 text-red-800
+}
+
+.alert--warning {
+    @apply bg-amber-200 border-amber-900 text-amber-800
+}
+
+.alert--success {
+    @apply bg-green-200 border-green-900 text-green-800
 }

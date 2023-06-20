@@ -1,0 +1,67 @@
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="py-4 border-b-2 border-indigo-900">
+        <div class="container flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold shadow">Forum<span class="text-emerald-200">JS</span></a>
+            <nav class="text-sm flex">
+                <a href="#" class="px-2">Accueil</a>
+                <a href="#" class="px-2">Membres</a>
+                <a href="#" class="px-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container flex justify-center py-16 flex-col items-center">
+
+            <h1 class="mb-4">S'inscrire</h1>
+
+            <form action="" method="post" class="panel">
+                <div class="form-line">
+                    <label for="pseudo">Pseudo</label>
+                    <input type="text" placeholder="Mon pseudo" id="pseudo" class="">
+                </div>
+                <div class="form-line mt-5">
+                    <label for="email">Adresse email</label>
+                    <input type="text" placeholder="mon@email.com" id="email" class="">
+                </div>
+                <div class="flex justify-between">
+                    <div class="form-line mt-5 w-1/2 mr-1">
+                        <label for="password">Mot de passe</label>
+                        <input type="password" id="password" class="">
+                    </div>
+                    <div class="form-line mt-5 w-1/2 ml-1">
+                        <label for="password-confirmed">Confirmer le mot de passe</label>
+                        <input type="password" id="password-confirmed" class="">
+                    </div>
+                </div>
+                <div class="form-line mt-7">
+                    <button type="submit" class="fjs-button">Créer mon compte</button>
+                    <button type="submit" class="fjs-button fjs-button--line mt-5">J'ai déjà un compte</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>

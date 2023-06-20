@@ -1,0 +1,112 @@
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="py-4 border-b-2 border-indigo-900">
+        <div class="container flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold shadow">Forum<span class="text-emerald-200">JS</span></a>
+            <nav class="text-sm flex">
+                <a href="#" class="px-2">Accueil</a>
+                <a href="#" class="px-2">S'inscrire</a>
+                <a href="#" class="px-2">Se connecter</a>
+                <a href="#" class="px-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="alert alert--error">
+        <div class="container flex">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+            </svg>
+            <span class="ml-1 italic">Une erreur est survenue ! <a href="#">Contactez un admin</a></span>
+            <button class="ml-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="alert alert--warning">
+        <div class="container flex">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+            </svg>
+            <span class="ml-1 italic">Attention la suppression est irréversible <a href="#">Contactez un admin</a></span>
+            <button class="ml-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="alert alert--success">
+        <div class="container flex">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            </svg>
+            <span class="ml-1 italic">Vous êtes connectés <a href="#">Contactez un admin</a></span>
+            <button class="ml-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <main>
+        <div class="container flex justify-center py-16 flex-col max-w-sm">
+
+            <h1 class="mb-4">Titre de niveau 1</h1>
+            <h2 class="mb-4">Titre de niveau 2</h2>
+            <h3 class="mb-4">Titre de niveau 3</h3>
+            <h4 class="mb-4">Titre de niveau 4</h4>
+            <h5 class="mb-4">Titre de niveau 5</h5>
+            <h6 class="mb-4">Titre de niveau 6</h6>
+
+            <form action="" method="post" class="panel">
+                <div class="form-line">
+                    <label for="email">Adresse email</label>
+                    <input type="text" placeholder="mon@email.com" id="email" class="">
+                </div>
+                <div class="form-line mt-5">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" class="">
+                </div>
+                <div class="form-line mt-7">
+                    <button type="submit" class="fjs-button">Se connecter</button>
+                    <button type="submit" class="fjs-button fjs-button--line mt-5">Créer un compte</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>
