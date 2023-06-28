@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "build:css": "npx postcss ./public/css/tailwind.css -o ./public/css/style.css --watch",
+    "build:css": "npx tailwindcss -i ./public/css/tailwind.css -o ./public/css/style.css --watch",
     "dev": "nodemon -e js,ejs,css"
   },
   "dependencies": {
