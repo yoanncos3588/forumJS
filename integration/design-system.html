@@ -7,12 +7,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../public/css/style.css">
+
+    <script type="module" src="./js/index.js" defer></script>
     <title>Document</title>
 </head>
 
 <body>
 
-    <header class="py-4 border-b-2 border-indigo-900">
+    <!-- HEADER -->
+    <header class="py-4 border-b-2 border-indigo-900" id="header">
         <div class="container flex justify-between items-center">
             <a href="#" class="text-2xl font-bold shadow">Forum<span class="text-emerald-200">JS</span></a>
             <nav class="text-sm flex">
@@ -30,22 +33,25 @@
         </div>
     </header>
 
-    <div class="alert alert--error">
-        <div class="container flex">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
-            </svg>
-            <span class="ml-1 italic">Une erreur est survenue ! <a href="#">Contactez un admin</a></span>
-            <button class="ml-auto">
+    <!-- NOTIFICATIONS ALERT -->
+    <template id="template-alert">
+        <div class="alert alert--error" slot="alert">
+            <div class="container flex">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
                 </svg>
-            </button>
+                <span class="ml-1 italic" slot="alert-content"></span>
+                <button class="ml-auto" slot="alert-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
         </div>
-    </div>
+    </template>
 
     <div class="alert alert--warning">
         <div class="container flex">
@@ -54,7 +60,8 @@
                 <path stroke-linecap="round" stroke-linejoin="round"
                     d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
             </svg>
-            <span class="ml-1 italic">Attention la suppression est irréversible <a href="#">Contactez un admin</a></span>
+            <span class="ml-1 italic">Attention la suppression est irréversible <a href="#">Contactez un
+                    admin</a></span>
             <button class="ml-auto">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6">
