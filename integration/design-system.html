@@ -14,12 +14,15 @@
 
 <body>
 
-    <div class="fixed z-50 inset-0 overflow-y-auto lg:hidden" role="dialog">
-        <div class="fixed inset-0 bg-indigo-900 backdrop-blur-sm dark:bg-slate-900/80"></div>
-        <div class="relative bg-indigo-950 text-emerald-50 w-80 max-w-[calc(100%-3rem)] p-6 h-screen">
+    <!-- NAV MOBILE -->
+    <div class="transition ease-in-out fixed z-50 inset-0 overflow-y-auto scale-0 opacity-0 lg:hidden" role="dialog" id="nav-mobile">
+        <!-- mask -->
+        <div class="fixed inset-0 bg-indigo-900 backdrop-blur-sm dark:bg-slate-900/80" id="nav-mobile-mask"></div>
+        <div class="transition ease-in-out delay-150 relative bg-indigo-950 text-emerald-50 w-80 max-w-[calc(100%-3rem)] p-6 h-screen -translate-x-full"
+            id="nav-mobile-menu">
             <div class="flex justify-between mb-8">
                 <a href="#" class="text-2xl font-bold shadow">Forum<span class="text-emerald-200">JS</span></a>
-                <button
+                <button id="nav-mobile-close"
                     class="w-8 h-8 flex items-center justify-center text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-6">
