@@ -29,7 +29,7 @@ header {
 /********************************************* TYPO **/
 /********************************************* TYPO **/
 
-a {
+a, button {
     @apply hover:text-emerald-400 hover:underline;
 }
 
@@ -80,6 +80,10 @@ label {
 
 .fjs-button--line {
     @apply bg-gradient-to-r from-indigo-900 to-indigo-900 text-emerald-50 border-indigo-400 hover:border-indigo-300 hover:text-indigo-300;
+}
+
+.fjs-button-icon {
+
 }
 
 /********************************************* FORM **/
